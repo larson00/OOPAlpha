@@ -1,3 +1,8 @@
+/**
+ * @author Larson 9/19/2018 Abstract class Product implements interface Item. Includes a constructor
+ * and toString method.
+ */
+
 import java.util.Date;
 
 //Create an abstract type called Product that will implement the Item interface
@@ -6,7 +11,7 @@ public abstract class Product implements Item {
   // Add the following fields to Product
 // int serialNumber
 // String manufacturer
-// Date manufacuredOn
+// Date manufacturedOn
 // String name
   private int serialNumber;
   private String manufacturer;

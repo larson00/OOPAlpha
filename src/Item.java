@@ -1,3 +1,7 @@
+/**
+ * @author Larson 9/19/2018 Interface for Item.
+ */
+
 import java.util.Date;
 
 public interface Item {
