@@ -9,7 +9,16 @@ public enum ItemType {
   //Visual VI
   //AudioMobile AM
   //VisualMobile VM
-  AU, VI, AM, VM;
+  AUDIO("AU"),
+  VISUAL("VI"),
+  AUDIOMOBILE("AM"),
+  VISUALMOBILE("VM");
+  public String code;
+  ItemType (String code){
+    this.code = code;
+  }
+  public String getCode() {
+    return code;
+  }
 
-
-}
+  }
