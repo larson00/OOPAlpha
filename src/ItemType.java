@@ -1,5 +1,5 @@
 /**
- * @author Larson 9/19/2018 Enum class ItemType for types Audio, Visual, AudioMobile, VisualMobile
+ * @author Larson 9/29/2018 Enum class ItemType for types Audio, Visual, AudioMobile, VisualMobile
  */
 public enum ItemType {
   //All items will have a pre-set type. Currently there are 4 types.

@@ -1,5 +1,5 @@
 /**
- * @author Larson 9/19/2018 Interface for Item.
+ * @author Larson 9/29/2018 Interface for Item.
  */
 
 import java.util.Date;

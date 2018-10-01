@@ -1,5 +1,5 @@
 /**
- * @author Larson 9/19/2018 Abstract class Product implements interface Item. Includes a constructor
+ * @author Larson 9/29/2018 Abstract class Product implements interface Item. Includes a constructor
  * and toString method.
  */
 
@@ -14,12 +14,12 @@ public abstract class Product implements Item {
 // Date manufacturedOn
 // String name
   private int serialNumber;
-  private String manufacturer;
-  private Date manufacuredOn;
+  private String manufacturer = Item.manufacturer;
+  private Date manufacturedOn;
   private String name;
   // Add an integer class variable called currentProductionNumber.
 // This will store the next number to be assigned to serialNumber.
-  static int currentProductionNumber;
+  private static int currentProductionNumber = 1;
 
   // Complete the methods from the interface Item.
 //  public void setProductionNumber(int productionNumber);
@@ -34,7 +34,7 @@ public abstract class Product implements Item {
 
   //public Date getManufactureDate(Date date);
   public Date getManufactureDate() {
-    return manufacuredOn;
+    return manufacturedOn;
   }
 
   //public int getSerialNumber();
@@ -51,7 +51,7 @@ public abstract class Product implements Item {
     this.name = name;
     serialNumber = currentProductionNumber;
     currentProductionNumber++;
-    manufacuredOn = new Date(System.currentTimeMillis());
+    manufacturedOn = new Date(System.currentTimeMillis());
   }
 
   //  Add a toString method that will return the following: (example data shown).
@@ -62,7 +62,7 @@ public abstract class Product implements Item {
   public String toString() {
     return "Manufacturer: " + manufacturer + "\n" +
         "Serial Number: " + serialNumber + "\n" +
-        "Date: " + manufacuredOn + "\n" +
+        "Date: " + manufacturedOn + "\n" +
         "Name :" + name + "\n";
   }
 
