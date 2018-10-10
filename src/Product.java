@@ -13,6 +13,9 @@ public abstract class Product implements Item {
 // String manufacturer
 // Date manufacturedOn
 // String name
+  public Product(){
+
+  }
   private int serialNumber;
   private String manufacturer = Item.manufacturer;
   private Date manufacturedOn;
@@ -28,9 +31,10 @@ public abstract class Product implements Item {
   }
 
   //  public String getName();
-  public void setName(String name){
+  public void setName(String name) {
     this.name = name;
   }
+
   public String getName() {
     return name;
   }
