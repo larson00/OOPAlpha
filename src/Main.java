@@ -6,7 +6,11 @@ import java.util.Date;
 public class Main {
 
   public static void main(String[] args) {
-    //System.out.println("Hello World!");
+    AudioPlayer a1 = new AudioPlayer("Player1", "MP3");
+    System.out.println(a1.toString());
+
+    Screen screen = new Screen();
+    System.out.println(screen.toString());
 
 
   }

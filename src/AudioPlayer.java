@@ -16,27 +16,42 @@ public class AudioPlayer extends Product implements MultimediaControl {
   // Create a constructor that will take in 2 parameters – name and audioSpecification.
   public AudioPlayer(String name, String audioSpecification) {
     // The constructor should call its parents constructor and also setup the media type.
-    super();
+    super(name);
+    this.audioSpecification = audioSpecification;
+    this.mediaType = ItemType.AUDIO;
+
 
   }
 
+  // Implement the methods from the MultimediaControl interface by simply
+// writing the action to the console.
   @Override
   public void play() {
+    System.out.println("Playing");
 
   }
 
   @Override
   public void stop() {
+    System.out.println("Stopping");
 
   }
 
   @Override
   public void previous() {
+    System.out.println("Previous");
 
   }
 
+
   @Override
   public void next() {
+    System.out.println("Next");
 
+  }
+  @Override
+  public String toString() {
+    return super.toString() + "Audio Spec: " + " " + audioSpecification + "\n" +
+        "Type: " + " " + mediaType;
   }
 }
