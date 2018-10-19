@@ -57,8 +57,8 @@ public abstract class Product implements Item {
 
   public Product(String name) {
     this.name = name;
-    serialNumber = currentProductionNumber++;
-    //currentProductionNumber++;
+    serialNumber = currentProductionNumber;
+    currentProductionNumber++;
     manufacturedOn = new Date(System.currentTimeMillis());
   }
 

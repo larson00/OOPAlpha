@@ -6,25 +6,37 @@
 //    Add a toString method that will
 //    return the details of the 3 field in the same format as the Product Class.
 public class Screen implements ScreenSpec {
+  int responseTime;
+  int refreshRate;
+  String resolution;
+
+
+  Screen(String resolution, int refreshRate, int responseTime){
+    this.resolution = resolution;
+    this.refreshRate = refreshRate;
+    this.responseTime = responseTime;
+  }
+
 
   @Override
   public int getRefreshRate() {
-    return 0;
+    return refreshRate;
   }
 
   @Override
   public int getResponseTime() {
-    return 0;
+    return  responseTime;
   }
 
   @Override
   public String getResolution() {
-    return null;
+    return resolution;
   }
   public String toString() {
-    return " Refresh Rate " + getRefreshRate() +
-        "Response Time " + getResponseTime() +
-        "Resolution" + getResolution();
+    return super.toString() +  "Resolution: " + getResolution() +
+        "Refresh Rate: " + getRefreshRate() +
+        "Response Time: " + getResponseTime();
+
   }
 
 }
