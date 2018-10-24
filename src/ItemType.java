@@ -1,4 +1,5 @@
 /**
+ * Step 2
  * @author Larson 9/29/2018 Enum class ItemType for types Audio, Visual, AudioMobile, VisualMobile
  */
 public enum ItemType {
@@ -11,8 +12,8 @@ public enum ItemType {
   //VisualMobile VM
   AUDIO("AU"),
   VISUAL("VI"),
-  AUDIOMOBILE("AM"),
-  VISUALMOBILE("VM");
+  AUDIO_MOBILE("AM"),
+  VISUAL_MOBILE("VM");
   public String code;
   ItemType (String code){
     this.code = code;

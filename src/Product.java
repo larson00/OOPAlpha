@@ -1,4 +1,5 @@
 /**
+ * Step 3
  * @author Larson 9/29/2018 Abstract class Product implements interface Item. Includes a constructor
  * and toString method.
  */
@@ -69,10 +70,10 @@ public abstract class Product implements Item {
 //  Name : Product Name
   @Override
   public String toString() {
-    return "Manufacturer: " + manufacturer + "\n" +
-        "Serial Number: " + serialNumber + "\n" +
-        "Date: " + manufacturedOn + "\n" +
-        "Name :" + name + "\n";
+    return "Manufacturer : " + manufacturer + "\n" +
+        "Serial Number : " + serialNumber + "\n" +
+        "Date : " + manufacturedOn + "\n" +
+        "Name : " + name;
   }
 
 }

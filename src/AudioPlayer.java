@@ -1,6 +1,7 @@
 /**
- * @author Larson
+ * @author Larson Step 5
  */
+
 // We require a concrete class that will allow us to capture the details of an audio player.
 // Create a class called AudioPlayer that is a subclass of Product
 // and implements the MultimediaControl interface.
@@ -49,9 +50,10 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Next");
 
   }
+
   @Override
   public String toString() {
-    return super.toString() + "Audio Spec: " + " " + audioSpecification + "\n" +
-        "Type: " + " " + mediaType;
+    return super.toString() + "Audio Spec : " + audioSpecification + "\n" +
+        "Type : " + mediaType;
   }
 }

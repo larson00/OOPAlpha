@@ -9,8 +9,8 @@ public class Main {
     AudioPlayer a1 = new AudioPlayer("Player1", "MP3");
     System.out.println(a1.toString());
 
-    Screen screen = new Screen();
-    System.out.println(screen.toString());
+    //Screen screen = new Screen();
+    //System.out.println(screen.toString());
 
 
   }
