@@ -6,15 +6,12 @@
 public class MoviePlayerDriver {
 
   public static void testMoviePlayer() {
-
-    MoviePlayer m1 = new MoviePlayer("720x480", "LCD");
-    m1.play();
-    m1.stop();
-    m1.next();
-    m1.previous();
-    System.out.println(m1.toString());
-
-    MoviePlayer m2 = new MoviePlayer("1366x768", "LED");
-    System.out.println(m2.toString());
+    MoviePlayer mp = new MoviePlayer("DBPOWER MK101",new Screen(
+        "720x480",40,22),MonitorType.LCD);
+    System.out.println(mp.toString());
+    //System.out.println("\n");
+    MoviePlayer mp2 = new MoviePlayer("Pyle PDV156BK",new Screen(
+        "1366x768",40,22),MonitorType.LED);
+    System.out.println(mp2.toString());
   }
 }

@@ -8,13 +8,12 @@ public class MoviePlayer extends Product implements MultimediaControl {
 
   // Add 2 fields to this class called screen and monitor type and assign appropriate types to them.
   public MonitorType monitorType;
-  public String screen;
+  public Screen screen;
 
-
-  public MoviePlayer(String screen, String name) {
+  public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name);
-    this.monitorType = MonitorType.LCD;
-    this.monitorType = MonitorType.LED;
+    this.monitorType = monitorType;
+    //this.monitorType = MonitorType.LED;
     this.screen = screen;
 
   }
@@ -38,14 +37,15 @@ public class MoviePlayer extends Product implements MultimediaControl {
 
   @Override
   public void next() {
-    System.out.println("Stopping movie");
+    System.out.println("Next movie");
   }
 
   // Create a toString method that calls the product toString,
   // displays the monitor and the screen details.
   public String toString() {
     return
-        "Screen : Resolution : " + screen + "\n" +
+        super.toString() + "\n" +
+        "Screen : " + screen + "\n" +
             "Monitor Type : " + monitorType;
 
   }
