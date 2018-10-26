@@ -7,7 +7,13 @@
 import java.util.Date;
 
 //Create an abstract type called Product that will implement the Item interface
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable <Product> {
+
+  @Override
+  public int compareTo(Product o) {
+    return name.compareTo(o.getName());
+
+  }
 
   // Add the following fields to Product
 // int serialNumber
@@ -70,7 +76,9 @@ public abstract class Product implements Item {
 //  Name : Product Name
   @Override
   public String toString() {
-    return "Manufacturer : " + manufacturer + "\n" +
+    return
+        "\n" +
+        "Manufacturer : " + manufacturer + "\n" +
         "Serial Number : " + serialNumber + "\n" +
         "Date : " + manufacturedOn + "\n" +
         "Name : " + name;
