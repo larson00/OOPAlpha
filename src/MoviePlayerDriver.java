@@ -1,6 +1,7 @@
 /**
- * Step 12
- * @author Larson
+ * Step 12: Driver class for the MoviePlayer class
+ *
+ * @author Larson 10/27/2018
  */
 // Create a diver class to test the functionality of the movie player.
 public class MoviePlayerDriver {

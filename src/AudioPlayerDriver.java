@@ -1,11 +1,14 @@
-// Step 6
+/**
+ * Step 6: Driver class for AudioPlayer
+ *
+ * @author Larson 10/27/2018
+ */
+
 // Create a driver class for AudioPlayer that will test to see whether we can instantiate
 // occurrences of it, use the media controls and print out their details to the console.
 public class AudioPlayerDriver {
 
   public static void testAudioPlayer() {
-
-
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
     a1.play();

@@ -1,14 +1,17 @@
 /**
- * Step 3
- * @author Larson 9/29/2018 Abstract class Product implements interface Item. Includes a constructor
- * and toString method.
+ * Step 3: Abstract class Product implements interface Item. Includes a constructor and toString
+ * method. Added Comparable<Product> and compareTo method for step 14, 15, 16
+ *
+ * @author Larson 9/29/2018
  */
 
 import java.util.Date;
 
-//Create an abstract type called Product that will implement the Item interface
-public abstract class Product implements Item, Comparable <Product> {
+// Create an abstract type called Product that will implement the Item interface
+// Implement Comparable interface
+public abstract class Product implements Item, Comparable<Product> {
 
+  // compareTo method
   @Override
   public int compareTo(Product o) {
     return name.compareTo(o.getName());
@@ -20,9 +23,10 @@ public abstract class Product implements Item, Comparable <Product> {
 // String manufacturer
 // Date manufacturedOn
 // String name
-  public Product(){
+  public Product() {
 
   }
+
   private int serialNumber;
   private String manufacturer = Item.manufacturer;
   private Date manufacturedOn;
@@ -78,10 +82,10 @@ public abstract class Product implements Item, Comparable <Product> {
   public String toString() {
     return
         "\n" +
-        "Manufacturer : " + manufacturer + "\n" +
-        "Serial Number : " + serialNumber + "\n" +
-        "Date : " + manufacturedOn + "\n" +
-        "Name : " + name;
+            "Manufacturer : " + manufacturer + "\n" +
+            "Serial Number : " + serialNumber + "\n" +
+            "Date : " + manufacturedOn + "\n" +
+            "Name : " + name;
   }
 
 }

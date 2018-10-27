@@ -1,11 +1,14 @@
 /**
- * Step 13
- * @author Larson
+ * Step 13: Driver class for the MoviePlayer and AudioPlayer class with play, stop, next, previous
+ * methods.
+ *
+ * @author Larson 10/27/2018
  */
 public class PlayerDriver {
+
   //public void test
-  public static void testPlayer(){
-    MultimediaControl mc1 = new  AudioPlayer("Ipod", "MP3");
+  public static void testPlayer() {
+    MultimediaControl mc1 = new AudioPlayer("Ipod", "MP3");
     MultimediaControl mc2 = new MoviePlayer("DBPOWER MK101", new Screen("720x480",
         44, 44), MonitorType.TYPE);
     mc1.next();

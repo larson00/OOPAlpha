@@ -1,3 +1,16 @@
+/**
+ * Main class. Contains final step 14, 15, 16
+ * Step 14: Add functionality to your classes that would
+ * allow them to be sorted by name with the Collections.sort method.
+ * Step 15: You are going to store
+ * a collection of the devices as they come off the production line. Choose an appropriate Java
+ * Collection and create a driver class that demonstrates its use. You should also demonstrate the
+ * Collections.sort method.
+ * Step 16: Create a method called print that would take your collection
+ * and list all of the contents. It should handle all of your classes
+ *
+ * @author Larson 10/27/2018
+ */
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,10 +38,8 @@ public class Main {
 
   public static ArrayList<Product> testCollection() {
 
-
-
-    AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
-    AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");
+    AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
     MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
         new Screen(" 720x480", 40, 22), MonitorType.LCD);
     MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
@@ -47,9 +58,9 @@ public class Main {
   // Step 16
   // Create print method here
 
-  public static  <T> void print(List<T> products){
+  public static <T> void print(List<T> products) {
 
-    for (T t :products) {
+    for (T t : products) {
       System.out.println(t.toString());
     }
   }

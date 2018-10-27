@@ -1,6 +1,7 @@
 /**
- * Step 2
- * @author Larson 9/29/2018 Enum class ItemType for types Audio, Visual, AudioMobile, VisualMobile
+ * Step 2: Enum class ItemType for types Audio, Visual, AudioMobile, VisualMobile
+ *
+ * @author Larson 9/29/2018
  */
 public enum ItemType {
   //All items will have a pre-set type. Currently there are 4 types.
@@ -15,11 +16,13 @@ public enum ItemType {
   AUDIO_MOBILE("AM"),
   VISUAL_MOBILE("VM");
   public String code;
-  ItemType (String code){
+
+  ItemType(String code) {
     this.code = code;
   }
+
   public String getCode() {
     return code;
   }
 
-  }
+}

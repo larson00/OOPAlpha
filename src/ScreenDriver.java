@@ -1,4 +1,8 @@
-// Step 10
+/**
+ * Step 10: Driver class for the Screen class
+ *
+ * @author Larson 10/27/2018
+ */
 // Create a Driver class for Screen that tests the functionality of the screen class
 public class ScreenDriver {
 

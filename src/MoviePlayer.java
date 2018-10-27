@@ -1,7 +1,9 @@
 /**
- * Step 11
+ * Step 11: MoviePlayer class that is a child of class Product and implements the MultimediaControl
+ * interface. Includes an overloaded constructor, play, stop, previous, and next methods from
+ * MultimediaControl, and a toString method for Screen and Monitor Type.
  *
- * @author Larson
+ * @author Larson 10/27/2018
  */
 // Create a class called MoviePlayer that extends Product and implements MultimediaControl
 public class MoviePlayer extends Product implements MultimediaControl {
@@ -45,7 +47,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
   public String toString() {
     return
         super.toString() + "\n" +
-        "Screen : " + screen + "\n" +
+            "Screen : " + screen + "\n" +
             "Monitor Type : " + monitorType;
 
   }

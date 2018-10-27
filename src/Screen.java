@@ -1,4 +1,9 @@
-// Step 9
+/**
+ * Step 9: Class Screen implements interface ScreenSpec. Includes an overloaded constructor and a
+ * toString method for Resolution, Refresh Rate, and Response time.
+ *
+ * @author Larson 10/27/2018
+ */
 public class Screen implements ScreenSpec {
   // Add three fields
   //String resolution, int refreshrate, int responsetime

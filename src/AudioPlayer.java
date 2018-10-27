@@ -1,5 +1,9 @@
 /**
- * @author Larson Step 5
+ * Step 5: AudioPlayer class that is a child of Product and implements interface MultimediaControl.
+ * Includes an overlaoded constructor, start, stop, playing, next features from MultimediaControl,
+ * and a toString for audioSpec and type.
+ *
+ * @author Larson 10/27/2018
  */
 
 // We require a concrete class that will allow us to capture the details of an audio player.
