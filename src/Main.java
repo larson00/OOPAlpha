@@ -12,13 +12,25 @@
  * @author Larson 10/27/2018
  */
 
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.io.FileWriter;
+
 
 public class Main {
 
   public static void main(String[] args) {
+
+    ProcessFiles pf = new ProcessFiles();
+    try {
+      pf.WriteFile("Test");
+    } catch (Exception ex){
+      System.out.println("Could not write");
+
+    }
+
 
     // Write one line of code to create an ArrayList of products
     ArrayList<Product> studentProducts = new ArrayList<Product>();
@@ -64,4 +76,5 @@ public class Main {
       System.out.println(t.toString());
     }
   }
+
 }
