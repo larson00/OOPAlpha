@@ -11,7 +11,7 @@
  *
  * @author Larson 10/27/2018
  */
-
+import java.util.Scanner;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,15 +33,17 @@ public class Main {
 
 
     // Write one line of code to create an ArrayList of products
-    ArrayList<Product> studentProducts = new ArrayList<Product>();
+    //ArrayList<Product> studentProducts = new ArrayList<Product>();
+    ArrayList<Product> products;
 
     // Write one line of code to call testCollection and assign the result to the ArrayList
-    studentProducts = testCollection();
+    products = testCollection();
 
     // Write one line of code to sort the ArrayList
-    Collections.sort(studentProducts);
+    Collections.sort(products);
     // Call the print method on the ArrayList
-    System.out.println(studentProducts);
+    System.out.println(products);
+    print(products);
 
   }
 
@@ -76,5 +78,6 @@ public class Main {
       System.out.println(t.toString());
     }
   }
+
 
 }
