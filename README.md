@@ -159,16 +159,21 @@ Step 18
 The program is required to create an audit trail on its tests of the production line so that it records which
 employee ran the test. To accomplish this you will need to create a class named EmployeeInfo that will
 allow the user to input their full name and then create a user id of their first initial and surname.
+
 The class will have 2 fields
+
  StringBuilder name;
  String code;
+
 The class will have the following methods defined:
+
  public StringBuilder getName()
  public String getCode()
  private void setName()
  private void createEmployeeCode(StringBuilder name)
  private String inputName()
  private boolean checkName(StringBuilder name)
+
 The setName() method will be called from the constructor which will use inputName() to get a name
 (firstname and surname) as a single input from the user before checkName() is used to make sure that
 the name supplied has a space in it.
@@ -184,17 +189,20 @@ An additional piece of information is required to be produced for the auditing w
 information being required as well. The department code is made up of four letters and two numbers.
 The format of the department code is the first letter must be in uppercase with the following three all
 being lowercase and no spaces.
+
 The following three fields need to be added to the EmployeeInfo class:
+
  String deptId;
-6
-Copyright © 2015, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
  Pattern p;
  Scanner in;
+
 The following new methods have to be defined:
+
  public String getDeptId()
  private void setDeptId()
  private String getId()
  private boolean validId(String id)
+
 As there will be multiple inputs across the class now the scanner will need to be declared and closed in
 the constructor. The pattern to control the format of the input will also have to be declared in the
 constructor. In between opening and closing the scanner, the constructor will need to not only get the
@@ -212,9 +220,16 @@ To ensure that sensitive information is not leaked it is important that the info
 encoded. To meet these regulations you need to add a method to the EmployeeInfo class that will reverse
 the order of the text stored for the department id. This should be done recursively using a method
 named reverseString().
+
 The following new methods have to be defined:
+
  public String reverseString(String id)
+
 If a valid department id is provided then reverseString() should be called before assigning the user input
 to the deptId field.
+
+
+
+Copyright © 2015, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
 
 
