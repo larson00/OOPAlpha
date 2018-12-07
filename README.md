@@ -163,16 +163,23 @@ allow the user to input their full name and then create a user id of their first
 The class will have 2 fields
 
  StringBuilder name;
+
  String code;
 
 The class will have the following methods defined:
 
  public StringBuilder getName()
+
  public String getCode()
+
  private void setName()
+
  private void createEmployeeCode(StringBuilder name)
+
  private String inputName()
+
  private boolean checkName(StringBuilder name)
+
 
 The setName() method will be called from the constructor which will use inputName() to get a name
 (firstname and surname) as a single input from the user before checkName() is used to make sure that
@@ -193,14 +200,19 @@ being lowercase and no spaces.
 The following three fields need to be added to the EmployeeInfo class:
 
  String deptId;
+
  Pattern p;
+
  Scanner in;
 
 The following new methods have to be defined:
 
  public String getDeptId()
+
  private void setDeptId()
+
  private String getId()
+
  private boolean validId(String id)
 
 As there will be multiple inputs across the class now the scanner will need to be declared and closed in
